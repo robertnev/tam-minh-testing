@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100vh;
+}
+
+.image1 {
+  background-image: url(./images/header-background2.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -10%;
+  background-size: auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-blend-mode: color;
+
+  min-width: 500px;
+  max-width: 1920px;
+  height: 500px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image2 {
+  background-image: url(./images/Clipboard01.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 20%;
+  background-size: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-blend-mode: color;
+
+  min-width: 500px;
+  max-width: 1920px;
+  height: 400px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-title {
+  color: white;
+  text-align: center;
+  line-height: 1.8;
+  vertical-align: middle;
+  letter-spacing: 10px;
+  font-family: 'Lato', sans-serif;
+
+  height: auto;
+  width: 600px;
+  background-color: rgba(0, 0, 0, 0.507);
+  border-radius: 10px;
+}
+
+.company-logo {
+  margin-bottom: 10px;
+  opacity: 90%;
+}
+
+@media only screen and (max-width: 700px) {
+  .image1 {
+    background-position-x: 80%;
+    background-attachment: scroll;
+  }
+
+  .image2 {
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-attachment: scroll;
+  }
+
+  .company-title {
+    width: 300px;
+    letter-spacing: normal;
+    min-width: 360px;
+  }
+}
